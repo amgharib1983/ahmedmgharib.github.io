@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmed Mohamed Gharib | Digital Marketing Manager</title>
+
+  <meta name="description" content="Ahmed Mohamed Gharib — Digital Marketing Manager specializing in Saudi Arabia & UAE markets, performance marketing, digital strategy, B2B growth and GCC market expansion.">
+  <meta name="author" content="Ahmed Mohamed Gharib">
+
+  <meta property="og:title" content="Ahmed Mohamed Gharib | Digital Marketing Manager">
+  <meta property="og:description" content="Digital Marketing Manager | Saudi Arabia & UAE Market Specialist">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-soft: #111111;
+      --card: #151515;
+      --border: rgba(255,255,255,0.09);
+      --text: #f5f5f5;
+      --muted: #a5a5a5;
+      --accent: #d6b36a;
+      --accent-soft: rgba(214,179,106,0.12);
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(10,10,10,0.82);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      right: -180px;
+      top: 80px;
+      background: radial-gradient(
+        circle,
+        rgba(214,179,106,0.13),
+        transparent 65%
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 86px);
+      line-height: 0.98;
+      letter-spacing: -3px;
+      margin-bottom: 28px;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: clamp(20px, 2.4vw, 30px);
+      color: #ddd;
+      margin-bottom: 22px;
+      font-weight: 400;
+    }
+
+    .hero-description {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 36px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 22px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #111;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
+    section {
+      padding: 110px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 25px;
+      letter-spacing: -1.5px;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* =========================
+       METRICS
+    ========================== */
+
+    .metrics {
+      background: var(--bg-soft);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border);
+    }
+
+    .metric {
+      padding: 38px 28px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .metric:nth-child(3n) {
+      border-right: none;
+    }
+
+    .metric-number {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .metric-text {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    .highlight-box {
+      border-left: 2px solid var(--accent);
+      padding: 22px 25px;
+      background: var(--accent-soft);
+      color: #ddd;
+    }
+
+    /* =========================
+       EXPERTISE
+    ========================== */
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 50px;
+    }
+
+    .expertise-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 30px;
+      transition: 0.3s;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(214,179,106,0.4);
+    }
+
+    .expertise-card h3 {
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .expertise-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================== */
+
+    .timeline {
+      margin-top: 50px;
+      border-left: 1px solid var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 50px 35px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 7px;
+      width: 9px;
+      height: 9px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .timeline-date {
+      color: var(--accent);
+      font-size: 13px;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+
+    .timeline-company {
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .timeline-role {
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+
+    .timeline-description {
+      color: var(--muted);
+      max-width: 750px;
+      font-size: 14px;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 50px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 38px;
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      border-color: rgba(214,179,106,0.45);
+      transform: translateY(-4px);
+    }
+
+    .project-type {
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .project-card h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .project-result {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .project-result strong {
+      color: var(--accent);
+    }
+
+    /* =========================
+       CERTIFICATIONS
+    ========================== */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 45px;
+    }
+
+    .cert {
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 25px;
+    }
+
+    .cert-provider {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .cert-name {
+      font-weight: 600;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact {
+      text-align: center;
+      padding-bottom: 80px;
+    }
+
+    .contact .section-intro {
+      margin: 0 auto 35px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: #666;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .metrics-grid,
+      .expertise-grid,
+      .about-grid,
+      .projects-grid,
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metric {
+        border-right: none;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .about-grid {
+        gap: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">AM<span>G</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Digital Marketing • GCC Markets
+        </div>
+
+        <h1>
+          Ahmed Mohamed<br>
+          <span>Gharib.</span>
+        </h1>
+
+        <div class="hero-title">
+          Digital Marketing Manager | Saudi Arabia & UAE Market Specialist
+        </div>
+
+        <p class="hero-description">
+          Results-driven digital marketing leader with 8+ years of experience
+          across Egypt, Saudi Arabia and the UAE — combining performance
+          marketing, digital strategy, brand development, analytics and
+          business growth.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+          </a>
+
+          <a href="https://www.linkedin.com/in/ahmedmgharib"
+             target="_blank"
+             class="btn btn-secondary">
+            LinkedIn
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- METRICS -->
+  <section class="metrics">
+    <div class="container">
+
+      <div class="section-label">Performance at a glance</div>
+
+      <div class="metrics-grid">
+
+        <div class="metric">
+          <div class="metric-number">8+</div>
+          <div class="metric-text">
+            Years of Digital Marketing Experience
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">10+</div>
+          <div class="metric-text">
+            Brands Launched from Zero
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">20–30%</div>
+          <div class="metric-text">
+            Revenue Growth within First 3 Months
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">80%</div>
+          <div class="metric-text">
+            Year-over-Year Revenue Growth
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">500K+</div>
+          <div class="metric-text">
+            Campaign Impressions for JTEX
+          </div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">30%</div>
+          <div class="metric-text">
+            Customer Acquisition Cost Reduction
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+          <div class="section-label">About Me</div>
+
+          <h2 class="section-title">
+            Marketing is not just about visibility.
+          </h2>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            I am a Digital Marketing Manager with progressive experience
+            across Egypt, Saudi Arabia and the UAE, specializing in
+            performance-driven digital strategies and GCC market growth.
+          </p>
+
+          <p>
+            My experience spans full-funnel marketing, paid media, SEO,
+            analytics, brand development, B2B acquisition and digital
+            team leadership.
+          </p>
+
+          <p>
+            I combine marketing execution with business and financial
+            analysis to build strategies focused on measurable commercial
+            outcomes rather than vanity metrics.
+          </p>
+
+          <div class="highlight-box">
+            <strong>
+              Digital Strategy + Performance + Business Intelligence
+            </strong>
+            <br><br>
+            A multidisciplinary background built across marketing,
+            management, finance and GCC markets.
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
+    <div class="container">
+
+      <div class="section-label">Core Expertise</div>
+
+      <h2 class="section-title">
+        What I bring to the table.
+      </h2>
+
+      <p class="section-intro">
+        A full-stack marketing perspective covering strategy,
+        acquisition, analytics, brand development and commercial growth.
+      </p>
+
+      <div class="expertise-grid">
+
+        <div class="expertise-card">
+          <h3>Performance Marketing</h3>
+          <p>
+            Full-funnel paid media strategies across Google,
+            Meta, LinkedIn and other major advertising platforms.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>GCC Market Strategy</h3>
+          <p>
+            Digital marketing strategies tailored to Saudi Arabia,
+            UAE and wider GCC business environments.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>B2B Growth</h3>
+          <p>
+            Lead generation, decision-maker targeting and digital
+            acquisition strategies for corporate markets.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>SEO & Analytics</h3>
+          <p>
+            SEO architecture, SEM, GA4, Search Console,
+            measurement frameworks and data-driven optimization.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Brand Development</h3>
+          <p>
+            Building brands from zero through positioning,
+            identity, digital presence and market activation.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Digital Team Leadership</h3>
+          <p>
+            Recruitment, onboarding, mentoring, workflow development
+            and KPI-driven team performance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+
+      <div class="section-label">Career</div>
+
+      <h2 class="section-title">
+        Professional Experience
+      </h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">JAN 2025 — PRESENT</div>
+          <div class="timeline-company">MODARAA Media</div>
+          <div class="timeline-role">
+            Digital Marketing Manager · Riyadh / Cairo
+          </div>
+          <div class="timeline-description">
+            Leading integrated digital marketing strategies across B2B
+            and B2C accounts, performance campaigns, SEO, SEM,
+            team development and business growth initiatives.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-date">JUN 2023 — PRESENT</div>
+          <div class="timeline-company">EAMAK Consultancy</div>
+          <div class="timeline-role">
+            Digital Marketing Manager – Consultant
+          </div>
+          <div class="timeline-description">
+            Built the company's digital marketing department from
+            inception, including website, SEO architecture, social
+            channels and B2B lead generation.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-date">AUG 2020 — DEC 2024</div>
+          <div class="timeline-company">STEAMAD Media Agency</div>
+          <div class="timeline-role">
+            Digital Marketing Manager
+          </div>
+          <div class="timeline-description">
+            Led full-funnel strategies across a diverse client portfolio,
+            paid and organic campaigns, SEO, business development
+            and marketing team development.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-date">MAY 2021 — AUG 2024</div>
+          <div class="timeline-company">AMH Food & STH Food</div>
+          <div class="timeline-role">
+            Digital Marketing Manager
+          </div>
+          <div class="timeline-description">
+            Developed brands, B2B and B2C strategies and digital
+            acquisition programs while securing major corporate
+            catering accounts.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-date">APR 2023 — PRESENT</div>
+          <div class="timeline-company">TANTASTE</div>
+          <div class="timeline-role">
+            Digital Marketing Manager
+          </div>
+          <div class="timeline-description">
+            Established brand identity and digital presence for a
+            premium natural food products company and expanded
+            its geographic market reach.
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-date">OCT 2017 — JUL 2020</div>
+          <div class="timeline-company">OKSHO Media Agency</div>
+          <div class="timeline-role">
+            Digital Media Manager → Social Media Manager → Specialist
+          </div>
+          <div class="timeline-description">
+            Progressively promoted while building and managing
+            digital marketing operations, social media, email,
+            display advertising and digital teams.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-label">Selected Work</div>
+
+      <h2 class="section-title">
+        Selected Saudi Projects
+      </h2>
+
+      <p class="section-intro">
+        Selected consulting and digital marketing engagements across
+        Saudi Arabia, covering B2B growth, brand development,
+        lead generation and digital market entry.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              Luxury Transportation · Riyadh
+            </div>
+
+            <h3>JTEX</h3>
+
+            <p>
+              Developed brand identity and digital channels for a
+              B2B luxury transportation company targeting corporations,
+              government entities, hotels and major events.
+            </p>
+          </div>
+
+          <div class="project-result">
+            <strong>500K+</strong> campaign impressions in 3 months
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              Management Consultancy · Saudi Arabia
+            </div>
+
+            <h3>EAMAK</h3>
+
+            <p>
+              Built the digital marketing department, website,
+              SEO architecture and B2B digital presence from inception.
+            </p>
+          </div>
+
+          <div class="project-result">
+            <strong>40%</strong> increase in qualified inbound leads
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              HR & Cleaning Services · Riyadh
+            </div>
+
+            <h3>DAWAM AL-AWLA</h3>
+
+            <p>
+              Built a complete digital identity and acquisition
+              strategy for Saudi market growth.
+            </p>
+          </div>
+
+          <div class="project-result">
+            <strong>35%</strong> increase in client acquisition
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              HR & Recruitment · Riyadh
+            </div>
+
+            <h3>COSMOS HR</h3>
+
+            <p>
+              Built digital presence and optimized recruitment
+              campaigns to improve qualified applicant flow.
+            </p>
+          </div>
+
+          <div class="project-result">
+            <strong>30%</strong> improvement in qualified applicant flow
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              HVAC & Firefighting · Riyadh
+            </div>
+
+            <h3>RAWABY EL MASHAREK</h3>
+
+            <p>
+              Created digital brand identity and website while
+              supporting market entry into construction and
+              facilities management tenders.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <div>
+            <div class="project-type">
+              Saudi Market Entry · Madinah
+            </div>
+
+            <h3>Quality Point</h3>
+
+            <p>
+              Launched complete digital presence and supported
+              sales, pricing and market-entry strategies.
+            </p>
+          </div>
+
+          <div class="project-result">
+            <strong>3</strong> new client acquisitions per month
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+
+      <div class="section-label">Credentials</div>
+
+      <h2 class="section-title">
+        Certifications & Education
+      </h2>
+
+      <div class="cert-grid">
+
+        <div class="cert">
+          <div class="cert-provider">LinkedIn</div>
+          <div class="cert-name">
+            LinkedIn Marketing Certification
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-provider">LinkedIn</div>
+          <div class="cert-name">
+            LinkedIn Marketing Measurement Certification
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-provider">Google</div>
+          <div class="cert-name">
+            Google Analytics / GA4 — 100/100
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-provider">CFA Institute</div>
+          <div class="cert-name">
+            CFA Level I
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-provider">DM ARTS Academy</div>
+          <div class="cert-name">
+            Digital Marketing Professional Diploma
+          </div>
+        </div>
+
+        <div class="cert">
+          <div class="cert-provider">Education</div>
+          <div class="cert-name">
+            Bachelor of Commerce — Accounting
+            <br>
+            Tanta University
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-label">Let's Connect</div>
+
+      <h2 class="section-title">
+        Looking for the next challenge.
+      </h2>
+
+      <p class="section-intro">
+        Open to full-time opportunities and senior consulting roles
+        across Saudi Arabia and the UAE.
+      </p>
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:Amgharib1983@gmail.com"
+          class="btn btn-primary">
+          Email Me
+        </a>
+
+        <a
+          href="tel:+201001161903"
+          class="btn btn-secondary">
+          +20 100 116 1903
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ahmedmgharib"
+          target="_blank"
+          class="btn btn-secondary">
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © 2026 Ahmed Mohamed Gharib. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
